@@ -1,0 +1,33 @@
+/**
+ * Name: _login.scss
+ * Description: Estilos de la página del Login
+*/
+
+.login {
+    
+    min-height: 100vh;
+    @include backgroundImage;
+    background-position: center right;
+
+    .card {
+        width: 40%;
+        border-radius: 8px;
+        background-color: $white;
+        padding: 0 $paddingMedium;
+        box-shadow: 0 3px 6px rgba(#c6c6c6, 0.2), 0 3px 6px rgba(#c6c6c6, 0.2);
+    }
+
+    .input-container {
+        transition:  all 400ms ease-in;
+        border-bottom: 1px solid transparent;
+        &:hover { border-bottom: 1px solid $lightBlue; }
+        &:focus-within { border-bottom: 1px solid $lightBlue; }
+    }
+
+    .legacy {
+        left: 0;
+        bottom: 8px;
+        position: absolute;
+    }
+    
+}

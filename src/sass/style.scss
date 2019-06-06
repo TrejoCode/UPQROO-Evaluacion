@@ -1,0 +1,41 @@
+/**
+*   style.scss
+*   @description: Constructor de la hoja de estilos
+*   @variables: dev: boolean: Activa las opciones de desarrollo
+*/
+
+$dev: false;
+
+/*  
+*   1.- Core Styles: trejocode.css
+*   2.- Componentes: Todos los elementos posibles
+*/
+
+
+/*      Core       */
+
+@import './core/dev';
+@import './core/trejocode';
+@import './core/colors';
+@import './core/fonts';
+@import './core/animations';
+@import './core/spacing';
+
+/*      Libs     */
+
+@import './libs/flickity';
+
+/*      Helpers      */
+
+@import './helpers/bg';
+
+/*      Componentes      */
+
+@import './components/inputs';
+
+/*      Páginas      */
+
+@import './pages/login';
+
+
+@if $dev { @include dev; }

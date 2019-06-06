@@ -1,0 +1,47 @@
+/**
+*   inputs.scss
+*   @description: Estilos para las entradas de texto y archivos
+*/
+
+input, textarea, select, option, label {
+    font-family: $OpenSans;
+}
+
+textarea {
+    resize: none;
+}
+
+.input {
+    font-size: $fontSmall;
+    font-family: $OpenSans;
+    font-weight: $weightSemi;
+    outline: none;
+    background-color: #EFEFEF;
+    padding: $paddingNormal $paddingMedium;
+}
+
+.input::placeholder, option, select {
+    color: #8e8e8e;
+}
+
+.login .input {
+    background-color: $white;    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .offer-add {
+        .input-offer, .input-select {
+            font-size: 1rem;
+            padding: 4px $paddingNormal;
+            background-color: #8e8e8e;
+            &::placeholder { font-weight: $weightSemi; }
+            ::-webkit-input-placeholder { font-weight: $weightSemi; }
+        }
+        .input-offer-title {
+            font-size: 1.6rem;
+            font-weight: $weightBold;
+        }
+    }
+}

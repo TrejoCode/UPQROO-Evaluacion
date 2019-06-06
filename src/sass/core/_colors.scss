@@ -1,0 +1,21 @@
+/**
+*   colors.scss
+*   @description: Variables de colores
+*/
+
+
+$black:             #000000;
+$white:             #ffffff;
+$lightBlue:         #00B6BF;
+$darkBlue:          #2C54B3;
+
+
+/* Classes de colores */
+
+.color-white { color: $white; }
+
+.color-black { color: $black; }
+
+.color-lightBlue { color: $lightBlue; }
+
+.color-darkBlue { color: $darkBlue; }

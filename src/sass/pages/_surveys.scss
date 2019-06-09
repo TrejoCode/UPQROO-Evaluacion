@@ -1,0 +1,239 @@
+/**
+ * Name: _surveys.scss
+ * Description: Estilos de la página del encuenta
+*/
+
+.survey {
+    background-color: #eeeeee;
+    .left {
+        top: 8px; 
+        width: 27%;
+        padding: 0 16px; 
+        position: sticky;        
+        align-self: flex-start;
+        .title {
+            background-color: $white;
+            margin-top: $marginMedium;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);  
+            h4 { 
+                color: #474747; 
+                padding: $paddingMedium 0;
+                padding-left: 10px;                
+            }
+        }
+        .content {
+            border-radius: 4px; 
+            background-color: $white;
+            margin-top: $paddingMedium;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+        }
+        .evaluated {
+            height: 60px;
+            align-self: flex-start;
+            border-bottom: 1px solid #eeeeee;
+            h4 {
+                color: #474747;
+                line-height: 24px;
+                padding: 10px $paddingNormal 10px 12px;
+            }
+            .option {
+                width: 16%;
+                height: 100%;
+                border-left: 1px solid #dddddd;
+                padding: $paddingNormal $paddingMedium;
+                transition: all 350ms ease-in-out;
+                &:hover {
+                    color: $white;
+                    background-color: $lightBlue; 
+                    border-left: 1px solid $lightBlue;
+                }
+            }
+            .first-option { border-radius: 0 4px 0 0; }
+        }
+        .evaluated-complete {
+            border: 1px solid $lightBlue;
+            .option {
+                color: $white;
+                border: 1px solid $lightBlue;
+                background-color: $lightBlue;
+            }
+        }
+        .evaluated-active {
+            border: 1px solid $lightBlue;
+            .option { color: $lightBlue; border-left: 1px solid $lightBlue; }
+        }
+        .exit {
+            background-color: $white;
+            margin-top: 16px;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);  
+            a { 
+                color: #ff7f7f;
+                padding: $paddingNormal 0;
+                padding-left: 10px;
+            }
+        }
+    }
+    .right {
+        width: 73%;
+        .sheet {
+            border-radius: 4px;
+            background-color: $white;
+            margin: $marginMedium $marginLarge 0 $marginMedium;
+            padding: $paddingMedium $paddingSemi;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+            b { color: $darkGray; }
+        }
+        .question {
+            p { 
+                font-size: 0.9rem; 
+                line-height: 26px;
+            }
+        }
+        .answers {
+            .radio {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                display: inline-block;
+                position: relative;
+                background-color: #f1f1f1;
+                color: #666666;
+                top: 0;
+                height: 20px;
+                width: 20px;
+                border: 0;
+                border-radius: 50px;
+                cursor: pointer;     
+                margin-right: $marginMedium;
+                outline: none;
+            }
+            .radio:checked::before {
+                position: absolute;
+                font-size: 0.8rem;
+                left: 7px;
+                content: '\02143';
+                transform: rotate(40deg);
+            }
+            .radio:hover {
+                background-color: #f7f7f7;
+            }
+            .radio:checked {
+                color: $white;
+                background-color: $lightBlue;
+            }
+            label {
+                margin-right: $marginMedium;
+                font-size: 0.85rem;
+                color: #333;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                cursor: pointer;
+            }
+        }
+        button {
+            padding: $paddingMedium $paddingLarge;
+            transition: background-color 300ms ease-in-out;
+            &:hover {
+                background-color: $lightBlue;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .survey {
+        .left {
+            width: 30%;        
+            .evaluated {
+                h4 { 
+                    font-size: 0.95rem;
+                }
+            }
+        }
+        .right {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .survey {
+        .row-responsive {
+            flex-direction: column;
+        }
+        .left {
+            width: 100%;
+            position: static;         
+        }
+        .right {
+            width: 100%;
+            .sheet {
+                margin: $marginMedium;
+                padding: $paddingMedium $paddingMedium;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .survey {
+        .left {
+            width: 100%;
+            position: static;         
+        }
+        .right {
+            width: 100%;
+            .sheet {
+                margin: $marginMedium;
+                padding: $paddingMedium $paddingMedium;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .survey {
+        .left {
+            width: 100%;
+            position: static;         
+        }
+        .right {
+            width: 100%;
+            padding: $paddingMedium;
+            .sheet {
+                margin: $marginMedium 0;
+                padding: $paddingMedium $paddingMedium;
+            }
+            .title {
+                h3 {
+                    font-size: 1rem;
+                }
+            }
+            .answers {
+                justify-content: space-between;
+                .radio {
+                    top: 0;
+                    height: 18px;
+                    width: 18px;
+                    margin-right: 4px;
+                }
+                .radio:checked::before {
+                    font-size: 0.6rem;
+                    top: 2px;
+                    left: 6px;
+                }                        
+                label {
+                    margin-right: 4px;
+                    font-size: 0.75rem;
+                }
+            }
+
+        }
+    }
+
+}

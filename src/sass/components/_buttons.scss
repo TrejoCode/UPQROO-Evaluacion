@@ -19,10 +19,6 @@ button {
     padding: $paddingMedium;
 }
 
-.btn-normal {
-    padding: $paddingNormal;
-}
-
 .btn-full {
     width: 100%;
 }
@@ -34,119 +30,6 @@ button {
 .btn-darkBlue { background-color: $darkBlue; }
 
 .btn-lightBlue { background-color: $lightBlue; }
-
-.btn-line {  border: 1px solid $darkBlue; background: $white; color: $darkBlue;}
-
-.btn-bottom {
-    position: fixed;
-    bottom: 0;
-}
-
-
-.btn-web{
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 8px 16px;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.btn-border-white {
-    border: 1px solid $white;
-    -webkit-transition: background-color  .5s;
-    transition: background-color  .5s;
-
-    &:hover{
-        background-color: $white;
-        color: $darkBlue;
-        font-weight: $weightBold;
-    }
-}
-
-.btn-web-forms {
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 8px 32px;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.btn-modal-login{
-    width: 100%;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 11px 32px;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  
-.btn-border-blue {
-    border: 2px solid $darkBlue;
-    width: 100%;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 8px 32px;
-    background: $white;
-}
-
-.btn-public{
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 9px;
-    width: 100%;
-}
-
-
-.btn-publi-border {
-    cursor: pointer;
-    border-radius: 5px;
-    border: 2px solid $darkBlue;
-    padding: 16px 0px;
-    width: 100%;
-}
-
-.btn-publi-border-2 {
-    cursor: pointer;
-    border-radius: 5px;
-    border: 2px solid $darkBlue;
-    padding: 16px 0px;
-    width: 100%;
-}
-
-.btn-lightBlue {
-    background-color: $lightBlue;
-}
-
-.btn-darkBlue {
-    background-color: $darkBlue;
-}
-
-@media screen and (max-width: 992px) {
-
-    .btn-publi-border {
-        cursor: pointer;
-        border-radius: 5px;
-        border: 2px solid #0C1B42;
-        padding: 8px;
-        width: 100%;
-        font-size: .9rem;
-    }
-
-    .btn-public{
-        cursor: pointer;
-        border-radius: 5px;
-        padding: 6px;
-        width: 100%;
-    }
-
-    .btn-publi-border-2 {
-        cursor: pointer;
-        border-radius: 5px;
-        border: 2px solid #0C1B42;
-        padding: 8px 0px;
-        width: 100%;
-        font-size: .7rem;
-    }
-    
-}
 
   
 

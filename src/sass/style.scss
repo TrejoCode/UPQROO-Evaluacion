@@ -32,10 +32,12 @@ $dev: false;
 /*      Componentes      */
 
 @import './components/inputs';
+@import './components/header';
+@import './components/buttons';
 
 /*      Páginas      */
 
-@import './pages/login';
+@import './pages/surveys';
 
 
 @if $dev { @include dev; }

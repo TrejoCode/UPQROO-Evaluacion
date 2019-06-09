@@ -9,6 +9,12 @@ input, textarea, select, option, label {
 
 textarea {
     resize: none;
+    border-bottom: 2px solid #f1f1f1;
+    padding: $paddingNormal 0;
+    transition: border-bottom 300ms ease-in-out;
+    &:hover, &:focus {
+        border-bottom: 2px solid $lightBlue;
+    }
 }
 
 .input {
@@ -31,17 +37,5 @@ textarea {
 
 
 @media screen and (max-width: 768px) {
-    .offer-add {
-        .input-offer, .input-select {
-            font-size: 1rem;
-            padding: 4px $paddingNormal;
-            background-color: #8e8e8e;
-            &::placeholder { font-weight: $weightSemi; }
-            ::-webkit-input-placeholder { font-weight: $weightSemi; }
-        }
-        .input-offer-title {
-            font-size: 1.6rem;
-            font-weight: $weightBold;
-        }
-    }
+
 }

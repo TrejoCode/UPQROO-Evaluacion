@@ -7,3 +7,12 @@ header {
 	padding: $paddingSemi 0;
 	background-color: $lightBlue;
 }
+
+.header-tittle {
+    position: relative;
+    width: 100%; 
+    height: 90px;
+	background-size: cover;
+	padding-left: $paddingMedium;
+    background-position: center;
+}

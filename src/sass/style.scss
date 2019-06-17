@@ -38,6 +38,8 @@ $dev: false;
 /*      Páginas      */
 
 @import './pages/surveys';
+@import './pages/login';
+@import './pages/reports';
 
 
 @if $dev { @include dev; }

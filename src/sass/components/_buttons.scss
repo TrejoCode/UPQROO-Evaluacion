@@ -31,5 +31,36 @@ button {
 
 .btn-lightBlue { background-color: $lightBlue; }
 
+.btn-login {
+    padding: 6px $paddingLarge;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background: $darkBlue;
+    border-radius: 4px;
+    color: $white;
+    transition: background .300s ease-in-out;
+
+    &:hover {
+        background: $lightBlue;
+        
+    }
+}
   
+.btn-search {
+    width: 16%;
+    padding: 10px;
+    background: $lightBlue;
+    font-size: $fontSmall;
+    color: white;
+    border-left: none;
+    cursor: pointer;
+
+    transition: background .300s ease-in-out;
+
+    &:hover {
+        background: $darkBlue;
+        
+    }
+
+
+}
 

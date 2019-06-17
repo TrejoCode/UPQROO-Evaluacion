@@ -17,6 +17,9 @@ $fontRegular:   1.2rem;
 $fontMedium:    1.4rem;
 $fontLarge:     1.6rem;
 $fontHuge:      1.8rem;
+$fontDouble:    2rem;
+
+.font-double {font-size: $fontDouble;}
 
 .font-large {font-size: $fontLarge;}
 

@@ -30,9 +30,34 @@ textarea {
     color: #8e8e8e;
 }
 
-.login .input {
-    background-color: $white;    
+
+.input-form {
+    width: 100%;
+    color: $darkGray;
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom: 1.5px solid #f2f2f2;
+    transition: background .300s ease-in-out;
 }
+
+.input-form:focus {
+    background-color: #ececec;
+    
+    border-bottom: 1.5px solid $lightBlue;
+}
+
+
+.input-search {
+    padding: 10px 8px 10px 12px;
+    font-size: $fontRegular;
+    float: left;
+    background: $white;
+    width: 100%;
+}
+
 
 
 

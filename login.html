@@ -8,7 +8,7 @@
     <title>UPQROO - Sistema de evaluación docente</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./src/css/style.min.css" media="screen" />
+    <link rel="stylesheet" href="./src/css/style.css" media="screen" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Sistema de evaluación docente" />
     <meta name="keywords" content="UPQROO, SIE, Sistema de evaluación" />    
@@ -19,45 +19,46 @@
 </head>
 <body>
 
-    <div class="flex main">
-        <div class="login justify-center" style="background-image: url(./src/img/login.jpg)">
-            <div class="container">
-                <div class="align-center">
-                    <div class="card column">
-                        <div class="white-space-32"></div>
-                        <h1 class="color-darkBlue text-center font-large uppercase">
-                            Universidad Politécnica de Quintana Roo
-                        </h1>
-                        <div class="white-space-16"></div>
-                        <p class="text-center font-regular weight-semi">
-                            Sistema de evaluación docente
-                        </p>
-                        <div class="white-space-16"></div>
-                        <form class="column">
-                            <div class="input-container align-center">
-                                <i class="fas fa-id-card color-lightBlue"></i>
-                                <input class="input" type="text" name="user" placeholder="Matrícula" minlength="4" maxlength="12" required>
+    <div class="main flex">
+        <div class="column login">
+            <div class="row background-login" ">
+                <div class="column justify-center align-center">
+                    <div class="row">
+                        <div class="column left justify-center align-center" style="background-image: url(src/img/leftblue.jpg)">
+                            <div class="container responsive-img item-left justify-center align-center">
+                                    <img src="src/img/upqroo.png" alt="Universidad Politecnica" title="Universidad Politecnica" class="cover-img logo"/>
+                                </div>
+                        </div>
+                        
+                        <div class="column right align-center justify-center">
+                            <div class="row container justify-center">
+                                <form class="column form-data" action="/surveys.html">
+                                    <h1 class="color-darkBlue font-double text-center title">EVALUACIÓN DOCENTE</h1>
+                                    <div class="white-space-24"></div>
+                                    <p class="color-darkgray font-regular text-center">Introduzca sus datos de acceso</p>
+                                    <div class="white-space-32"></div>
+                                   
+                                    <input type="text" name="matricula" placeholder="Matricula" class="input input-form" required>
+                                    <div class="white-space-24"></div>
+                                    <input type="password" name="matricula" placeholder="Contraseña" class="input input-form" required>
+                                    <div class="white-space-32"></div>
+                                    <button type="submit" class="btn btn-login  bg-darkBlue color-white font-regular weight-semi">INGRESAR</button>
+                                    <div class="white-space-24"></div>
+                                    <div class="row justify-center">
+                                   
+                                    </div>
+                                </form>                               
                             </div>
-                            <div class="input-container align-center">
-                                <i class="fas fa-key color-lightBlue"></i>
-                                <input class="input" type="password" name="password" placeholder="Contraseña" minlength="4" maxlength="24" required>
-                            </div>
-                        </form>
-                        <div class="white-space-32"></div>
+                        </div> 
                     </div>
+
+                   
                 </div>
-                <div class="legacy justify-center">
-                    <div class="container">
-                        <p class="color-white text-center font-mini weight-semi">
-                            Queda prohibido reproducir total o parcialmente, por cualquier forma o medio, cada uno de los elementos (gráficos,
-                            textos, etc.) que integran este sitio Web, sin la correspondiente autorización de la Universidad Politécnica de
-                            Quintana Roo
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            </div> <!--/.background login-->
+            
+        </div> <!--/.column login-->
+
+    </div> <!--/.main flex-->
 
 
     <script src="./src/js/front.js"></script>

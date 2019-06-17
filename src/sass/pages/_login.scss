@@ -1,33 +1,58 @@
 /**
- * Name: _login.scss
- * Description: Estilos de la página del Login
-*/
+    * login.scss
+    * @description: Estilos del login
+    * @author: Katherine Felix 
+**/
 
-.login {
+.login{
+
+    height: 100vh;
+    background-color: $white;
+
+    .right, .left  {
+        height: 100vh;
+    }
+
+    .left {
+        background-size: cover;
+        background-position: top;
+        width: 50%;
+
+        .logo {
+            width: 60%;
+        }
+    }
     
-    min-height: 100vh;
-    @include backgroundImage;
-    background-position: center right;
-
-    .card {
-        width: 40%;
-        border-radius: 8px;
+    .right {
+        width: 50%;
         background-color: $white;
-        padding: 0 $paddingMedium;
-        box-shadow: 0 3px 6px rgba(#c6c6c6, 0.2), 0 3px 6px rgba(#c6c6c6, 0.2);
+
+        .form-data {
+            width: 90%;
+            padding: 0 $paddingExtra ;
+
+            .title {
+                transform: scaleX(1.02);
+            }
+        }
     }
 
-    .input-container {
-        transition:  all 400ms ease-in;
-        border-bottom: 1px solid transparent;
-        &:hover { border-bottom: 1px solid $lightBlue; }
-        &:focus-within { border-bottom: 1px solid $lightBlue; }
-    }
-
-    .legacy {
-        left: 0;
-        bottom: 8px;
-        position: absolute;
-    }
     
+}
+
+
+@media screen and (min-width: 1440px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .login {
+        .left{
+            display: none;
+        }
+    }
 }

@@ -1,0 +1,416 @@
+.reports {
+    background-color: #eeeeee;
+    .left {
+        top: 0px; 
+        width: 27%;
+        padding: 0 16px; 
+        position: sticky;        
+        align-self: flex-start;
+        .title {
+            background-color: $white;
+            margin-top: $marginMedium;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);  
+            h4 { 
+                color: #474747; 
+                padding: $paddingMedium 0;
+                padding-left: 10px;                
+            }
+        }
+        .content {
+            border-radius: 4px; 
+            background-color: $white;
+            margin-top: $paddingMedium;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+        }
+        .evaluated-tittle {
+            height: 45px;
+            align-self: flex-start;
+            background-color: $lightBlue;
+            border-bottom: 1px solid #eeeeee;
+            h4 {
+                color: $white;
+                font-weight: $weightBold;
+                line-height: 24px;
+                padding: 10px $paddingNormal 10px 12px;
+            }
+            
+            .first-option { border-radius: 0 4px 0 0; }
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+          }
+          
+          /* Track */
+          ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+          }
+           
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: #c2c2c2; 
+          }
+          
+          /* Handle on hover */
+          ::-webkit-scrollbar-thumb:hover {
+            background: $darkBlue; 
+          }
+
+        .options {
+                max-height: 125px;
+                overflow: auto;
+                
+            .option {
+                min-height: 40px;
+                align-self: flex-start;
+                background-color: $white;
+                border-bottom: 1px solid #eeeeee;
+                padding: 10px $paddingNormal 10px 12px;
+
+            label {
+                color: $darkGray;
+                font-weight: $weightSemi;
+                line-height: 24px;
+                font-size: $fontMini;
+                padding-left: 10px $paddingNormal 10px 12px;
+            }
+            }
+            .radio {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                display: inline-block;
+                position: relative;
+                background-color: #f1f1f1;
+                color: #666666;
+                top: 0;
+                height: 20px;
+                width: 20px;
+                border: 0;
+                border-radius: 50px;
+                cursor: pointer;     
+                margin-right: $marginMedium;
+                outline: none;
+            }
+            .radio:checked::before {
+                position: absolute;
+                font-size: 0.8rem;
+                left: 7px;
+                content: '\02143';
+                transform: rotate(40deg);
+            }
+            .radio:hover {
+                background-color: #f7f7f7;
+            }
+            .radio:checked {
+                color: $white;
+                background-color: $lightBlue;
+            }
+            label {
+                margin-right: $marginMedium;
+                font-size: 0.85rem;
+                color: #333;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                cursor: pointer;
+            }
+        }
+        .exit {
+            background-color: $white;
+            margin-top: 16px;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);  
+            a { 
+                color: #ff7f7f;
+                padding: $paddingNormal 0;
+                padding-left: 10px;
+            }
+        }
+    }
+    .right {
+        width: 73%;
+
+        .document {
+            .tittle-doc {
+                font-size: 1.7rem;
+                text-align: center;
+            }
+            .section {
+                width: 123px;
+            }
+            .logo-doc {
+            width: 135px;
+            }
+            .data-content{
+                background-color: #f2f2f2;
+                padding: 6px 27px;
+                border-radius: 4px;
+            }
+            .column-small {
+                width: 55%
+            }
+
+            .table-report{
+                font-family: $OpenSans;
+                .final{
+                    background: #f2f2f2;
+                    color: #474747;
+                    font-weight: $weightBold;   
+                    border-right: 1px solid $white; 
+                    
+                }
+                tbody td {
+                    padding: 12px 8px;
+                    text-align: center;
+                    border-bottom: 1px solid #f2f2f2;
+                    font-size: $fontTiny;
+                    &:first-child {
+                        text-align: start;
+                    }
+                }
+                tbody tr td{
+                    color: $darkGray; 
+                    font-size: $fontTiny;
+                    border-right: 1px solid #f2f2f2; 
+                    &:first-child {
+                        padding-left: $paddingMedium;
+                        border-left: 1px solid #f2f2f2; 
+                    }
+                }
+              
+                thead tr {
+                    height: 40px;
+                    background: #f2f2f2;
+                    text-align: center;                    
+                    th {
+                        width: 20%;
+                        font-weight: $weightSemi;
+                    &:first-child {
+                        width: 50%;
+                    }
+                }
+               
+                }
+            }
+        }
+         
+    
+        .sheet {
+            border-radius: 4px;
+            background-color: $white;
+            margin: $marginMedium $marginLarge 0 $marginMedium;
+            padding: $paddingMedium $paddingSemi;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+            b { color: $darkGray; }
+        }
+        .question {
+            p { 
+                font-size: 0.9rem; 
+                line-height: 26px;
+            }
+        }
+        .answers {
+            .radio {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                display: inline-block;
+                position: relative;
+                background-color: #f1f1f1;
+                color: #666666;
+                top: 0;
+                height: 20px;
+                width: 20px;
+                border: 0;
+                border-radius: 50px;
+                cursor: pointer;     
+                margin-right: $marginMedium;
+                outline: none;
+            }
+            .radio:checked::before {
+                position: absolute;
+                font-size: 0.8rem;
+                left: 7px;
+                content: '\02143';
+                transform: rotate(40deg);
+            }
+            .radio:hover {
+                background-color: #f7f7f7;
+            }
+            .radio:checked {
+                color: $white;
+                background-color: $lightBlue;
+            }
+            label {
+                margin-right: $marginMedium;
+                font-size: 0.85rem;
+                color: #333;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                cursor: pointer;
+            }
+        }
+        button {
+            padding: $paddingMedium $paddingLarge;
+            transition: background-color 300ms ease-in-out;
+            &:hover {
+                background-color: $lightBlue;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .reports {
+       
+        .left {
+            width: 30%;        
+            .evaluated {
+                h4 { 
+                    font-size: 0.95rem;
+                }
+            }
+        }
+        .right {
+            width: 70%;
+
+            .data-content {
+                p {
+                    font-size: $fontMini;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .reports {
+        .row-responsive {
+            flex-direction: column;
+        }
+        .left {
+            width: 100%;
+            position: static;         
+        }
+        .right {
+            width: 100%;
+            .sheet {
+                margin: $marginMedium;
+                padding: $paddingMedium $paddingMedium;
+            }
+        }
+
+        .right {
+          
+            .document {
+
+                .white-space-16 {
+                    height: 0px;
+                }
+
+                .white-space-32 {
+                    height: 10px;
+                }
+                .tittle-doc {
+                    font-size: 1.7rem;
+                    text-align: center;
+                    margin-top: $marginNormal;
+                }
+                .tittle-report {
+                    margin-top: 16px;
+                }
+                .section {
+                    width: 123px;
+                }
+                .logo-doc {
+                width: 135px;
+                }
+                .data-content{
+                margin-top: $marginNormal;
+                width: 100%;
+                }
+                .column-small {
+                    width: 100%;
+                    margin-top: 8px;
+                }
+                .column-info {
+                    margin-top: 8px;
+                }
+                .period {
+                    width: 100%;
+                }
+
+                .alumns {
+                    width: 55%;
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .survey {
+        .left {
+            width: 100%;
+            position: static;         
+        }
+        .right {
+            width: 100%;
+            .sheet {
+                width: 100%;
+                margin: $marginMedium;
+                padding: $paddingMedium $paddingMedium;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .survey {
+        .left {
+            width: 100%;
+            position: static;
+            
+            
+        }
+
+        .right {
+            width: 100%;
+            padding: $paddingMedium;
+            .sheet {
+                margin: $marginMedium 0;
+                padding: $paddingMedium $paddingMedium;
+            }
+            .title {
+                h3 {
+                    font-size: 1rem;
+                }
+            }
+            .answers {
+                justify-content: space-between;
+                .radio {
+                    top: 0;
+                    height: 18px;
+                    width: 18px;
+                    margin-right: 4px;
+                }
+                .radio:checked::before {
+                    font-size: 0.6rem;
+                    top: 2px;
+                    left: 6px;
+                }                        
+                label {
+                    margin-right: 4px;
+                    font-size: 0.75rem;
+                }
+            }
+
+        }
+    }
+
+}
